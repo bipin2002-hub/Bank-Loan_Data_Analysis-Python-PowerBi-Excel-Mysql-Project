@@ -1,7 +1,8 @@
 📊 Bank Loan Data Analysis
-🔍 Comprehensive Analysis of Lending Patterns, Risk & Portfolio Performance
-📌 Project Overview
 
+🔍 Comprehensive Analysis of Lending Patterns, Risk & Portfolio Performance
+
+📌 Project Overview
 This project focuses on analyzing a real-world bank loan dataset to uncover key insights into lending behavior, credit risk, and portfolio performance. The objective is to support data-driven decision-making in the banking sector by identifying patterns in borrower profiles, loan performance, and profitability.
 
 🎯 Objectives
