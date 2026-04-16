@@ -1,10 +1,4 @@
 # 📊 Bank Loan Data Analysis
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-F29111?style=flat&logo=mysql&logoColor=white)
-![Excel](https://img.shields.io/badge/Excel-217346?style=flat&logo=microsoft-excel&logoColor=white)
-![PowerBI](https://img.shields.io/badge/Power_BI-F2C811?style=flat&logo=powerbi&logoColor=black)
-
 > A comprehensive end-to-end analysis of **38,575 bank loan applications** — covering data cleaning, exploratory data analysis, risk assessment, and interactive Power BI dashboards.
 
 ---
@@ -78,17 +72,17 @@ The banking and financial sector relies heavily on data-driven decisions to mana
 ```
 bank-loan-analysis/
 ├── data/
-│   └── loan_data.csv
+│   └── financial_loan 1.0.csv
 ├── notebooks/
-│   └── bank_loan_eda.ipynb
+│   └── Bank Loan Data Analysis .ipynb
 ├── sql/
-│   └── loan_queries.sql
+│   └── bank_loan_data_analysis SQL.sql
 ├── excel/
-│   └── loan_dashboard.xlsx
+│   └── financial_loan 1.0.csv.xlsx
 ├── powerbi/
-│   └── bank_loan_report.pbix
+│   └── Bank loan Dashboard Power bi.pbix
 ├── images/
-│   └── dashboard_preview.png
+│   └──Bank loan Dashboard Power bi.pdf
 └── README.md
 ```
 
@@ -132,13 +126,6 @@ For SQL analysis, import `loan_data.csv` into your MySQL database and run the sc
 7. **Monitor low-income and early-career borrowers** — higher risk despite strong loan demand
 
 ---
-
-## 📸 Dashboard preview
-
-> Power BI dashboard showing loan summary, grade-wise breakdown, geographic distribution, and monthly trends.
-
-*(![Uploading Screenshot 2026-04-10 214734.png…]()
-)*
 
 ---
 
