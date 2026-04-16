@@ -1,73 +1,152 @@
-📊 Bank Loan Data Analysis
-🔍 Comprehensive Analysis of Lending Patterns, Risk & Portfolio Performance
-📌 Project Overview
+# 📊 Bank Loan Data Analysis
 
-This project analyzes a real-world bank loan dataset to uncover actionable insights into lending behavior, credit risk, and portfolio performance. The goal is to enable data-driven decision-making by identifying patterns in borrower profiles, loan performance, and profitability.
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-F29111?style=flat&logo=mysql&logoColor=white)
+![Excel](https://img.shields.io/badge/Excel-217346?style=flat&logo=microsoft-excel&logoColor=white)
+![PowerBI](https://img.shields.io/badge/Power_BI-F2C811?style=flat&logo=powerbi&logoColor=black)
 
-🎯 Objectives
-Analyze loan portfolio distribution and lending trends
-Perform borrower profiling based on income, employment, and demographics
-Evaluate loan performance (Fully Paid, Charged-Off, Current)
-Identify key risk indicators using DTI, interest rate, and loan grade
-Assess overall profitability and financial health of the portfolio
-Explore loan purpose and geographic trends
-🗂️ Dataset Summary
-Total Records: 38,576 loan applications
-Total Features: 24 columns
-Key Variables:
-Borrower Information: Income, Employment Length, Home Ownership
-Loan Details: Loan Amount, Interest Rate, Term, Grade
-Credit Metrics: DTI, Total Accounts
-Performance Metrics: Loan Status, Total Payment
-⚙️ Tools & Technologies
-Python: Pandas, NumPy, Matplotlib, Seaborn
-SQL (MySQL): Data querying and transformation
-Excel: Initial data exploration
-Power BI: Interactive dashboard visualization
-🧹 Data Cleaning & Feature Engineering
-Handled missing values and ensured data consistency
-Converted date columns into proper datetime format
-Standardized column names using snake_case
-Created additional features:
-Loan Category (Good vs Bad)
-Income Segmentation (Low, Medium, High)
-Time-based features (Month, Year, Weekday)
-📊 Key Insights
-💰 Portfolio Performance
-Total Funded Amount: $435.76M
-Total Amount Received: $473.07M
-Net Profit: $37.31M
-👉 Indicates a strong and profitable loan portfolio
-📈 Loan Trends
-Loan applications show steady growth, with peak demand in Q4
-Interest rates remain stable (~12%), reflecting a consistent pricing strategy
-⚠️ Risk Analysis
-13.8% of loans are charged-off, significantly impacting profitability
-DTI shows limited predictive power → need for advanced risk models
-👤 Customer Insights
-Majority of borrowers belong to the middle-income segment
-High-income customers demonstrate better repayment behavior
-🏦 Business Insight
-Lending model is primarily volume-driven
-👉 Higher loan disbursement leads to increased revenue and returns
-📉 Dashboard
+> A comprehensive end-to-end analysis of **38,575 bank loan applications** — covering data cleaning, exploratory data analysis, risk assessment, and interactive Power BI dashboards.
 
-An interactive Power BI dashboard was developed to visualize:
+---
 
-Loan performance by status
-Monthly trends and KPIs
-Loan purpose analysis
-Borrower segmentation
-💡 Business Recommendations
-Enhance credit risk assessment beyond DTI
-Focus on high-performing loan categories (Debt Consolidation, Credit Card)
-Reduce bad loans through stricter approval policies
-Leverage seasonal demand trends (Q4 growth)
-Improve collection strategies to maximize profitability
-🚀 Conclusion
+## 📋 Table of contents
+- [Project overview](#project-overview)
+- [Dataset](#dataset)
+- [Tech stack](#tech-stack)
+- [Key KPIs](#key-kpis)
+- [Project structure](#project-structure)
+- [How to run](#how-to-run)
+- [Key findings](#key-findings)
+- [Business recommendations](#business-recommendations)
+- [Dashboard preview](#dashboard-preview)
+- [Author](#author)
 
-The analysis reveals that while the portfolio is profitable and growing, a significant portion of profits is impacted by bad loans. Implementing data-driven risk strategies and optimized lending policies can further improve portfolio performance and long-term sustainability.
+---
 
-👤 Author
+## 🔍 Project overview
 
-Bipin Chandra Arya
+The banking and financial sector relies heavily on data-driven decisions to manage lending risks and optimize loan portfolios. This project analyzes a real-world bank loan dataset to uncover patterns in **borrower behavior**, **loan performance**, and **risk indicators** that can guide smarter lending strategies.
+
+**Objectives:**
+1. Loan portfolio overview — distribution of amounts, terms, and grades
+2. Borrower profiling — income, employment, and demographic patterns
+3. Loan performance analysis — fully paid vs charged-off vs current
+4. Risk assessment — key indicators using DTI, grade, and interest rate
+5. Geographic analysis — lending patterns across different states
+6. Purpose analysis — why borrowers take loans
+7. Financial summary — total disbursed vs total recovered
+
+---
+
+## 📁 Dataset
+
+| Property | Value |
+|---|---|
+| Total records | 38,575 loan applications |
+| Total features | 24 columns |
+| Source | Real-world bank dataset (2021) |
+| Key columns | loan_amount, int_rate, grade, dti, loan_status, annual_income, purpose |
+
+---
+
+## 🛠️ Tech stack
+
+| Tool | Purpose |
+|---|---|
+| **Python** (Pandas, Matplotlib, Seaborn) | Data cleaning, EDA, visualization |
+| **MySQL** | SQL-based queries and aggregations |
+| **Microsoft Excel** | Data exploration and pivot analysis |
+| **Power BI** | Interactive dashboard and reporting |
+
+---
+
+## 📊 Key KPIs
+
+| Metric | Value |
+|---|---|
+| Total loan applications | 38,576 |
+| Total funded amount | $435.76M |
+| Total amount received | $473.07M |
+| Net profit gain | $37.31M |
+| Average interest rate | 12.05% |
+| Average DTI ratio | 13.33% |
+
+---
+
+## 📂 Project structure
+
+```
+bank-loan-analysis/
+├── data/
+│   └── loan_data.csv
+├── notebooks/
+│   └── bank_loan_eda.ipynb
+├── sql/
+│   └── loan_queries.sql
+├── excel/
+│   └── loan_dashboard.xlsx
+├── powerbi/
+│   └── bank_loan_report.pbix
+├── images/
+│   └── dashboard_preview.png
+└── README.md
+```
+
+---
+
+## 🚀 How to run
+
+```bash
+git clone https://github.com/your-username/bank-loan-analysis.git
+cd bank-loan-analysis
+pip install pandas matplotlib seaborn jupyter
+jupyter notebook notebooks/bank_loan_eda.ipynb
+```
+
+For SQL analysis, import `loan_data.csv` into your MySQL database and run the scripts in `/sql`.
+
+---
+
+## 💡 Key findings
+
+- **83.3%** of loans are fully paid — indicating a healthy, well-performing portfolio
+- **Bad loan rate of 13.8%** (charge-offs), notably higher than the 2–5% industry norm
+- Charged-off loans recovered only **56.9%** of funded amount vs **117.7%** for good loans
+- **Debt consolidation** drives 47% of applications and **57% of total profit** ($21.34M)
+- **Small business loans** are the only loss-making category (-$0.31M) despite a 13% interest rate
+- **Grade B borrowers** are the most profitable segment ($10.07M), balancing volume and rate
+- **Mortgage holders** have the highest avg income ($83,763) and generate the most profit ($19.15M)
+- Loan volume grew steadily from **2,332 in Jan to 4,314 in Dec** — strong Q4 demand spike
+- DTI alone is a **weak predictor of default** — all segments show 13–15% DTI regardless of outcome
+
+---
+
+## ✅ Business recommendations
+
+1. **Tighten credit screening** beyond DTI — use loan grade, employment history, and purpose as stronger risk gatekeepers
+2. **Focus on debt consolidation and credit card** loan segments — highest return on capital deployed
+3. **Implement early repayment incentives** and automated reminder systems to improve collections
+4. **Increase Q4 fund allocation** to capitalize on seasonal demand growth
+5. **Apply stricter underwriting for small business loans** — loss-making despite highest interest rate
+6. **Avoid aggressive interest rate hikes** — use risk-based pricing by grade rather than rate alone
+7. **Monitor low-income and early-career borrowers** — higher risk despite strong loan demand
+
+---
+
+## 📸 Dashboard preview
+
+> Power BI dashboard showing loan summary, grade-wise breakdown, geographic distribution, and monthly trends.
+
+*(![Uploading Screenshot 2026-04-10 214734.png…]()
+)*
+
+---
+
+## 👤 Author
+
+**Bipin Chandra Arya**
+Data Analyst · Python · SQL · Power BI · Excel
+
+---
+
+*Thank you and happy learning!* 🎓
