@@ -1,21 +1,7 @@
 # 📊 Bank Loan Data Analysis
 > A comprehensive end-to-end analysis of **38,575 bank loan applications** — covering data cleaning, exploratory data analysis, risk assessment, and interactive Power BI dashboards.
 
----
 
-## 📋 Table of contents
-- [Project overview](#project-overview)
-- [Dataset](#dataset)
-- [Tech stack](#tech-stack)
-- [Key KPIs](#key-kpis)
-- [Project structure](#project-structure)
-- [How to run](#how-to-run)
-- [Key findings](#key-findings)
-- [Business recommendations](#business-recommendations)
-- [Dashboard preview](#dashboard-preview)
-- [Author](#author)
-
----
 
 ## 🔍 Project overview
 
